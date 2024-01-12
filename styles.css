@@ -1,0 +1,189 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--strong-cyan: hsl(171, 66%, 44%);
+	--light-blue: hsl(233, 100%, 69%);
+	--dark-grayish-blue: hsl(210, 10%, 33%);
+	--grayish-blue: hsl(201, 11%, 66%);
+}
+
+body {
+	font-family: 'Bai Jamjuree', sans-serif;
+	font-size: 18px;
+	line-height: 1.4;
+}
+
+section {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0px 25px;
+	margin-bottom: 100px;
+}
+
+section:first-of-type {
+	margin-bottom: 0;
+}
+
+.logo {
+	padding: 80px 0px;
+	background-image: url('./images/bg-header-mobile.png');
+}
+
+p {
+	text-align: center;
+}
+
+.big-txt,
+.mid-txt {
+	color: var(--dark-grayish-blue);
+}
+
+.big-txt {
+	font-size: 24px;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+
+.reasoning {
+	font-size: 14px;
+	color: var(--grayish-blue);
+	margin-bottom: 40px;
+}
+
+.buttons {
+	width: 100%;
+}
+
+.btn {
+	width: 90%;
+	height: 50px;
+	border-radius: 25px;
+	font-size: 16px;
+	font-weight: 400;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.ios-btn {
+	background-color: var(--strong-cyan);
+}
+
+.mac-btn {
+	background-color: var(--light-blue);
+}
+
+.picture {
+	width: 90%;
+	margin-bottom: 50px;
+}
+
+.features {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.mid-txt {
+	font-size: 20px;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+
+.icon {
+	margin: 30px auto;
+	display: block;
+}
+
+section:last-of-type {
+	margin-bottom: 0;
+}
+
+footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #f5f6f8;
+	padding: 50px 0;
+}
+
+footer img {
+	width: 50px;
+	height: 50px;
+}
+
+.menu {
+	display: flex;
+	flex-direction: column;
+}
+
+.menu-item {
+	margin: 15px 0;
+}
+
+.menu-item:last-of-type {
+	margin-bottom: 50px;
+}
+
+.social {
+	width: 40%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.social-icon {
+	max-width: 20px;
+	max-height: 20px;
+	width: auto;
+	height: auto;
+}
+
+@media only screen and (min-width: 1440px) {
+	.buttons {
+		width: 500px;
+		display: flex;
+	}
+
+	.picture-features {
+		display: flex;
+	}
+
+	.picture {
+		width: 20%;
+	}
+
+	.customers {
+		display: flex;
+	}
+
+	footer {
+		padding: 50px 20%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.menu {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-content: flex-end;
+	}
+
+	.social {
+		width: 15%;
+	}
+}
